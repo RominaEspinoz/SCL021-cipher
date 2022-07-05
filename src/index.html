@@ -6,9 +6,53 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+    <header>
+      <div class="name">
+        <h1>Te Acompaño</h1>
+        <h2>Juntas nos cuidamos</h2>
+        </div>
+      <div class="imagen"><img src="Invited! (1).jpg" alt="Logo" class="Logo"></div>
+    </header>
+
+    <main>
+      <p> Somos una página creada por y para mujeres, con el fin de entregarnos información secreta entre nosotras</p>
+
+      <div class="container">
+      <section class="incode">
+        <label for="ButtonToCreate"> Quiero contarle algo a mi amiga</label>
+         <input type="button" class="ButtonToCreate" value="Crear Mensaje Secreto"></input>
+      </section>
+
+      <section class="todecode">
+        <label for="ButtonToDecode"> ¿Qué quizó decir mi amiga?</label>
+
+         <input type="button" class="ButtonToDecode" value="Descifrar Mensaje Secreto"></input>
+      </section>
     </div>
+
+      <article id="incode2">
+        <form action="#" method="post" name="Mensage">
+          <label for=mensageincode>Inserta tú mensaje aquí:</label></br>
+          <input type="text" id="mensageincode" name="mensageincode" value="Inserta tú mensaje aquí"></input></br>
+          <div class="part2"><label for="movement">Indica un n° de desplazamiento para el cifrado</label>
+          <input type="number" id="movement" name="movement"></input></br>
+          <input type="button" class="Tocreate" value="CREAR"></input></div>
+         </form>
+
+      </article>
+
+      <article id="todecode2">
+        <form action="#" method="post" name="Mensage">
+          <label for=mensagetocode>Inserta el mensaje secreto aquí:</label></br>
+          <input type="text" id="mensajetodecode" name="mensagetodecode" value="Inserta el mensaje secreto aquí"></input></br>
+          <input type="button" class="Todecode" value="DESCIRFAR"></input>
+         </form>
+
+      </article>
+    </main>
+    <footer>
+      Footer 
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>

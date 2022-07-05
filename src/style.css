@@ -1,0 +1,267 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+body {
+    background-color: #D9D9D9;
+    }
+header {
+background-color: #AC65A5;
+display: flex;
+}
+.name {
+    width: 80%;
+}
+h1{
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+.imagen {
+    display: flex;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.Logo {
+    width: 140px;
+    height: 140px;
+    border-radius: 80%;
+    opacity: 65%;
+}
+main {
+    background-color: aliceblue;
+}
+p {
+    text-align: center;
+}
+.container {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.incode {
+    display: flex;
+    background-color: #FFFFFF;
+    border: 2px solid;
+    width: 40%;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.incode :hover {
+    background-color: #EFBFF3;
+}
+.todecode {
+    display: flex;
+    background-color: #FFFFFF;
+    border: 2px solid;
+    width: 40%;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.todecode :hover {
+    background-color: #EFBFF3;
+}
+.ButtonToCreate {
+    background-color: #D9D9D9;
+    width: 250px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+.ButtonToDecode {
+    background-color: #D9D9D9;
+    width: 250px;
+    height: 50px;
+    border-radius: 50%;
+}
+#incode2 {
+    display: flex;
+    background-color: #AC65A5;
+    border: 3px solid;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#mensageincode {
+    background-color: aqua;
+    width: 99%;
+    height: 50px;
+}
+.part2 {
+    display:flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
