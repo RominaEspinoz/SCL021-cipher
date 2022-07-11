@@ -1,35 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="name">
-        <h1>Te Acompaño</h1>
-        <h2>Juntas nos cuidamos</h2>
-        </div>
-      <div class="imagen"><img src="Invited! (1).jpg" alt="Logo" class="Logo"></div>
-    </header>
 
-    <main>
-      <article id="incode2">
-        <form action="#" method="post" name="Mensage">
-          <label for=mensageincode>Inserta tú mensaje aquí:</label></br>
-          <input type="text" id="mensageincode" name="mensageincode" value="Inserta tú mensaje aquí"></input></br>
-          <div class="part2"><label for="movement">Indica un n° de desplazamiento para el cifrado</label>
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="name">
+      <h1>Te Acompaño</h1>
+      <h2>Juntas nos cuidamos</h2>
+    </div>
+    <div class="imagen"><img src="Invited! (1).jpg" alt="Logo" class="Logo"></div>
+  </header>
+
+  <main>
+
+    <article id="incode2">
+      <form action="#" method="post" name="Mensage">
+        <label for=messagetocode>Inserta tú mensaje aquí:</label></br>
+        <input type="text" id="messagetocode" name="messagetocode" pattern="[A-Z]{1,1000}"
+          placeholder="Sólo mayúsculas, no se acepta la letra ñ"></input></br>
+        <span class="validity"></span>
+      </form>
+      <form>
+        <div class="part2">
+          <div id="despl"><label for="movement">Indica un n° de desplazamiento para el cifrado</label></div>
           <input type="number" id="movement" name="movement"></input></br>
-          <input type="button" class="Tocreate" value="CREAR"></input></div>
-         </form>
+          <input type="button" id="Tocreate" value="CREAR"></input>
+        </div>
+      </form>
 
-      </article>
+      <div class="CodedMessage">
+        <p>Este es tú mensaje secreto!</p>
+        <textarea name="textarea" id="textarea" rows="10" cols="50"></textarea>
+      </div>
+    </article>
 
-    </main>
-    <footer>
-      Footer 
-    </footer>
-    <script src="index.js" type="module"></script>
-  </body>
+  </main>
+  <footer>
+    Footer
+  </footer>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>

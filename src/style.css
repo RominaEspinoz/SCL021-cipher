@@ -3,7 +3,13 @@
 
 }
 body {
-    background-color: #D9D9D9;
+    display: flex;
+    background-color: #F3DCFE;
+    margin: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: stretch;
     }
 header {
 background-color: #AC65A5;
@@ -37,13 +43,23 @@ h2 {
     opacity: 65%;
 }
 main {
-    background-color: aliceblue;
+    display: flex;
+    height: 90%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    height: 10%;
 }
 p {
     text-align: center;
 }
 .container {
     display: flex;
+    height: 400px;
     text-align: center;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -54,14 +70,13 @@ p {
 .incode {
     display: flex;
     background-color: #FFFFFF;
-    border: 2px solid;
     width: 40%;
-    height: 100px;
+    height: 200px;
     text-align: center;
     align-items: center;
     flex-wrap: nowrap;
     align-content: space-around;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: column;
 }
 .incode :hover {
@@ -70,14 +85,13 @@ p {
 .todecode {
     display: flex;
     background-color: #FFFFFF;
-    border: 2px solid;
     width: 40%;
-    height: 100px;
+    height: 200px;
     text-align: center;
     align-items: center;
     flex-wrap: nowrap;
     align-content: space-around;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: column;
 }
 .todecode :hover {
@@ -105,25 +119,56 @@ p {
 }
 #incode2 {
     display: flex;
-    background-color: #AC65A5;
-    border: 3px solid;
+    background-color: #F3DCFE;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
     justify-content: space-evenly;
     align-items: center;
+    width: 100%;
+    height: 100%
 }
-#mensageincode {
-    background-color: aqua;
-    width: 99%;
-    height: 50px;
+#mensage {
+    width: 100%;
+    height: 100%;
+}
+
+#messagetocode {
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 150px
 }
 .part2 {
-    display:flex;
+    display: flex;
+    border: ridge;
+    width: 500px;
+    height: 70px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
 }
+#despl {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#movement {
+    background-color: #FFFFFF;
+    width: 50px;
+    height: 30px;
 
 
+}
+ #Tocreate {
+    background-color: #FFFFFF;
 
+ }
 
 
 

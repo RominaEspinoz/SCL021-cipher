@@ -1,8 +1,17 @@
 import cipher from './cipher.js';
 
 console.log(cipher);
-//Pasos para realizar antes cifrar (Interacciones con el DOM)
-// Al apretar button Crear Mensaje Secreto se abre pagina para codificar mensaje 
-// Al apretar button Descrifrar Mensaje Secreto se abre pagina para decodificar mensaje
-// Guardar mensaje escrito en input "Mensage to code"
+
+window.addEventListener("load", ToCreate, true);
+
+function ToCreate() {
+    document.getElementById("messagetocode").addEventListener("keyup", function () {
+        this.value = this.value.toUpperCase();
+    }, true);
+    document.getElementById("Tocreate").addEventListener("click", function () {
+        let texto = document.getElementById("messagetocode").value;
+        let desplazamiento = document.getElementById("movement").value;
+        document.getElementById("textarea").value = cipher.cifrar(texto, desplazamiento);
+    }, true);
+}
 
