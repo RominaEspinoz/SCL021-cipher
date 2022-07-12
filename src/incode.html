@@ -25,7 +25,7 @@
           placeholder="Sólo mayúsculas, no se acepta la letra ñ"></input></br>
         <span class="validity"></span>
       </form>
-      <form>
+      <form action="#" method="post" name="Mensage">
         <div class="part2">
           <div id="despl"><label for="movement">Indica un n° de desplazamiento para el cifrado</label></div>
           <input type="number" id="movement" name="movement"></input></br>
@@ -39,7 +39,21 @@
       </div>
     </article>
 
+    <article id="todecode2">
+      <form action="#" method="post" name="Mensage">
+        <input type="button" id="Todecode" value="DESCIRFAR MENSAJE SECRETO"></input>
+       </form>
+
+       <div class="DecodedMessage">
+        <p>Este es el mensaje descifrado!</p>
+        <textarea name="DecodedMessage" id="DecodedMessage" rows="10" cols="50"></textarea>
+      </div>
+
+    </article>
+
     <button class="Index"><a href="index.html" style="text-decoration:none">Volver</a></button>
+    <button class="Decode"><a href="decode.html" style="text-decoration:none">Descifrar</a></button>
+
 
   </main>
   <footer>
