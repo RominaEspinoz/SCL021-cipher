@@ -11,16 +11,16 @@ function ToCreate() {
     }, true); // Escucha el momento en que se escribe y transforma lo escrito en mayuscula
     document.getElementById("Tocreate").addEventListener("click", function () {//Cuando escucha que se hace click en el boton CREAR(id=ToCreate)
         let texto = document.getElementById("messagetocode").value;// Crea dos variables texto y desplazamiento, ambas vienen del valor ingresado en  incode.html
-        let desplazamiento = document.getElementById("movement").value;
-        document.getElementById("textarea").value = cipher.cifrar(texto, desplazamiento);// la funcion indica que el valor de textarea sera lo ingresado en las variables luego de haber pasando por el cifrado 
+        let desplazamiento = parseInt(document.getElementById("movement").value);
+        document.getElementById("textarea").value = cipher.encode(desplazamiento,texto);// la funcion indica que el valor de textarea sera lo ingresado en las variables luego de haber pasando por el cifrado 
     }, true);
 }
 //En la misma html(incode.html)
 function ToDecode() {
     document.getElementById("Todecode").addEventListener("click", function () {//Cuando escucha que se hace click en el boton DESCIFRAR(Id "Todecode")
         let texto = document.getElementById("textarea").value;// Crea dos variables texto y desplazamiento, ambas vienen del valor ingresado en  decode.html
-        let desplazamiento = document.getElementById("movement").value;
-        document.getElementById("DecodedMessage").value = cipher.descifrar(texto, desplazamiento);// la funcion indica que el valor de textarea sera lo ingresado en las variables luego de haber pasando por el cifrado 
+        let desplazamiento = parseInt(document.getElementById("movement").value);
+        document.getElementById("DecodedMessage").value = cipher.decode(desplazamiento,texto);// la funcion indica que el valor de textarea sera lo ingresado en las variables luego de haber pasando por el cifrado 
     }, true);
 }
 
