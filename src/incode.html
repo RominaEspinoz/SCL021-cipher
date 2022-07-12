@@ -19,46 +19,52 @@
   <main>
 
     <article id="incode2">
-      <form action="#" method="post" name="Mensage">
-        <label for=messagetocode>Inserta tú mensaje aquí:</label></br>
+      <form action="#" method="post" name="Mensage" id="Formulario">
+        <label for=messagetocode id="InsertMessage">INSERTA TÚ MENSAJE AQUÍ:</label>
         <input type="text" id="messagetocode" name="messagetocode" pattern="[A-Z]{1,1000}"
-          placeholder="Sólo mayúsculas, no se acepta la letra ñ"></input></br>
+          placeholder="Sólo mayúsculas, no se acepta la letra ñ"></input>
         <span class="validity"></span>
       </form>
-      <form action="#" method="post" name="Mensage">
+      <form action="#" method="post" name="Mensage" id="Formulario">
         <div class="part2">
-          <div id="despl"><label for="movement">Indica un n° de desplazamiento para el cifrado</label></div>
-          <input type="number" id="movement" name="movement"></input></br>
+          <label for="movement" id="labelmovement">Indica un n° de desplazamiento para el cifrado</label>
+          <input type="number" id="movement" name="movement"></input>
           <input type="button" id="Tocreate" value="CREAR"></input>
+        </div>
+        <div class="CodedMessage">
+          <p>ESTE ES TÚ MENSAJE SECRETO!</p>
+          <input type="text" name="textarea" id="textarea">
         </div>
       </form>
 
-      <div class="CodedMessage">
+      <!-- <div class="CodedMessage">
         <p>Este es tú mensaje secreto!</p>
-        <textarea name="textarea" id="textarea" rows="10" cols="50"></textarea>
-      </div>
+        <input type="text" name="textarea" id="textarea">
+      </div> -->
     </article>
 
     <article id="todecode2">
-      <form action="#" method="post" name="Mensage">
+      <form action="#" method="post" name="Mensage" id="Formulario2">
         <input type="button" id="Todecode" value="DESCIRFAR MENSAJE SECRETO"></input>
        </form>
 
        <div class="DecodedMessage">
-        <p>Este es el mensaje descifrado!</p>
-        <textarea name="DecodedMessage" id="DecodedMessage" rows="10" cols="50"></textarea>
+        <p>ESTE ES EL MENSAJE DESCIFRADO!</p>
+        <input type="text" name="DecodedMessage" id="DecodedMessage">
       </div>
 
     </article>
+    <div id="Buttons">
+      <button class="Index"><a href="index.html" style="color:black" >VOLVER</a></button>
+      <button class="Decode"><a href="decode.html" style="text-decoration:none">DESCIFRAR</a></button>
+    </div>
+    
 
-    <button class="Index"><a href="index.html" style="text-decoration:none">Volver</a></button>
-    <button class="Decode"><a href="decode.html" style="text-decoration:none">Descifrar</a></button>
-
-
+    
   </main>
-  <footer>
+<!--   <footer>
     Footer
-  </footer>
+  </footer> -->
   <script src="index.js" type="module"></script>
 </body>
 

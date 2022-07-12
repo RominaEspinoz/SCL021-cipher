@@ -4,7 +4,6 @@ console.log(cipher);
 
 window.addEventListener("load", ToCreate, true);
 window.addEventListener("load", ToDecode, true);
-window.addEventListener("load", Todecode, true);
 
 function ToCreate() {
     document.getElementById("messagetocode").addEventListener("keyup", function () {

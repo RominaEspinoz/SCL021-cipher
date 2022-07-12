@@ -14,15 +14,18 @@ body {
 header {
 background-color: #AC65A5;
 display: flex;
+border: dotted 6px #522b4e;
 }
 .name {
     width: 80%;
 }
 h1{
     text-align: center;
+    font-size: 45px;
 }
 h2 {
     text-align: center;
+    font-size: 28px;
 }
 .imagen {
     display: flex;
@@ -45,6 +48,8 @@ h2 {
 main {
     display: flex;
     height: 90%;
+    width: 80%;
+    padding-top: 50px;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
@@ -56,9 +61,11 @@ footer {
 }
 p {
     text-align: center;
+    font-size: 25px;
 }
 .container {
     display: flex;
+    width: 100%;
     height: 400px;
     text-align: center;
     flex-direction: row;
@@ -70,8 +77,9 @@ p {
 .incode {
     display: flex;
     background-color: #FFFFFF;
-    width: 40%;
+    width: 45%;
     height: 200px;
+    border: dotted #522b4e;
     text-align: center;
     align-items: center;
     flex-wrap: nowrap;
@@ -79,14 +87,13 @@ p {
     justify-content: space-evenly;
     flex-direction: column;
 }
-.incode :hover {
-    background-color: #EFBFF3;
-}
+
 .todecode {
     display: flex;
     background-color: #FFFFFF;
-    width: 40%;
+    width: 45%;
     height: 200px;
+    border: dotted #522b4e;
     text-align: center;
     align-items: center;
     flex-wrap: nowrap;
@@ -94,22 +101,17 @@ p {
     justify-content: space-evenly;
     flex-direction: column;
 }
-.todecode :hover {
-    background-color: #EFBFF3;
-}
-.ButtonToCreate {
-    background-color: #D9D9D9;
-    width: 250px;
-    height: 50px;
-    border-radius: 50%;
-    
-}
+
 .ButtontoCreate {
     background-color: #D9D9D9;
     width: 250px;
     height: 50px;
     border-radius: 50%;
-    text-decoration: none;
+
+}
+
+.ButtontoCreate:hover {
+    background-color: #AC65A5;
 }
 .ButtonToDecode {
     background-color: #D9D9D9;
@@ -128,6 +130,20 @@ p {
     width: 100%;
     height: 100%
 }
+
+#Formulario {
+    display: flex;
+    margin: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#InsertMessage {
+    display: flex;
+    justify-content: center;
+    background-color: #F3DCFE;
+    width: 100%;
+    font-size: 25px;
+}
 #mensage {
     width: 100%;
     height: 100%;
@@ -140,7 +156,6 @@ p {
 }
 .part2 {
     display: flex;
-    border: ridge;
     width: 500px;
     height: 70px;
     flex-direction: row;
@@ -148,40 +163,121 @@ p {
     align-content: space-between;
     justify-content: center;
     align-items: center;
-    background-color: #FFFFFF;
 }
-#despl {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+#labelmovement {
+    background-color: rgb(255, 255, 255);
+    padding: 14px;
+    border: solid 1px;
+    margin: 5px;
 }
 #movement {
     background-color: #FFFFFF;
     width: 50px;
-    height: 30px;
-
-
+    height: 50px;
+    margin: 15px;
+    font-size: 20px
 }
  #Tocreate {
     background-color: #FFFFFF;
-
+    height: 54.5px;
+    font-size: 15px;
  }
 
-
-
-
-
-
-
-
-
-
-
-
-
+#Tocreate:hover{
+    background-color: #AC65A5;
+}
+#Tocreate:active{
+    background-color: #522b4e;
+}
+.CodedMessage{
+    display: flex;
+    margin: 15px;
+    flex-direction: column;
+    width: 100%;
+}
+#textarea{
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 150px;
+}
+#todecode2{
+    display: flex;
+    background-color: #F3DCFE;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#Formulario2 {
+    display: flex;
+    margin: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#Todecode{
+    background-color: #FFFFFF;
+    height: 54.5px;
+    font-size: 15px;
+}
+#Todecode:hover{
+    background-color: #AC65A5;
+}
+#Todecode:active{
+    background-color: #522b4e;
+}
+.DecodedMessage{
+    display: flex;
+    margin: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+#DecodedMessage{
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 150px;
+}
+#Buttons{
+    display: flex;
+    background-color: #F3DCFE;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.Index{
+    background-color: #FFFFFF;
+    height: 54.5px;
+    font-size: 15px;
+    color: #000000;
+    text-decoration: none;
+}
+.Decode{
+    background-color: #FFFFFF;
+    height: 54.5px;
+    font-size: 15px;
+    color:#000000;
+}
+.Index:hover{
+    background-color: #AC65A5;
+}
+.Index:active{
+    background-color: #522b4e;
+}
+.Decode:hover{
+    background-color: #AC65A5;
+}
+.Decode:active{
+    background-color: #522b4e;
+}
+nav{
+    display: flex;
+}
 
 
 
