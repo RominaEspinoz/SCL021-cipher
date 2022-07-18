@@ -1,5 +1,8 @@
 const cipher = { 
-  cifrar: function (texto,desplazamiento){
+  encode: function (desplazamiento, texto){
+    if (!Number.isInteger(desplazamiento) || desplazamiento === 0 || desplazamiento === null ) {
+      throw new TypeError("Debes ingresar un numero");
+    }
     let resultado = "";
     let letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     
@@ -18,7 +21,11 @@ const cipher = {
     return resultado;
   },
 
-  descifrar: function (texto,desplazamiento){
+  decode: function (desplazamiento,texto){
+    if (!Number.isInteger(desplazamiento) || desplazamiento === 0 || desplazamiento === null ) {
+      throw new TypeError("Debes ingresar un numero");
+    }
+
     let resultado = "";
     let letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     
@@ -38,3 +45,4 @@ const cipher = {
   }
   }
 export default cipher;
+
