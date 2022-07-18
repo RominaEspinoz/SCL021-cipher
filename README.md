@@ -1,16 +1,14 @@
-![Te acompaño](Invited!.png)
 
-**Pendientes: explicar cómo descargar, instalar y ejecutar la aplicación**
 # Proceso y Decisiones de diseño  
 ## **Proceso de la aplicación**  
-1. Solicitar a las usuarias que entreguen su localización para que los mensajes cifrados puedan aparecer con un título según la localización
-2. Las usuarias podrán ingresar información acerca de la seguridad o alguna experiencia que se haya vivido en el sector en el cual se encuentran ubicadas
-3. Al ingresar esta información, se guardará como un mensaje cifrado que poseerá como título la ubicación indicada anteriormente
-4. Las usuarias podrán decifrar la información que necesiten
+1. Al ingresar las usuarias deberán entrar a la sección para Crear Mensaje Secreto
+2. Luego deberán escribir un mensaje el cual quiera cifrar
+3. Deberán elegir el desplazamiento del cifrado
+4. Finalmente podrán ver su mensaje cifrado segun el desplazamiento seleccionado el cual podrán copiar y enviar 
 
 ## **Decisiones de diseño**
 1. Debe ser una interfaz simple y rápida de usar, ya que la idea es obtener y entregar información de manera rápida
-2. El mensaje cifrado deberá aparecer de manera rápida y no se podrá visualizar el mensaje original luego del cifrado, esto en el caso de que otras personas quieran ver el mensaje que quizó escribir la usuaria
+2. Las usuarias podrán de manera rápida volver a la página de inicio donde no se podrán ver los mensajes escritos
 
 
 # Definición del producto  
@@ -26,5 +24,4 @@
 2. Que las mujeres que obtengan esta información puedan sentirse más seguras en un entorno desconocido 
 3. Minimizar las experiencias traumaticas a través de la prevención, implementada desde la información entre mujeres
 ## **Como el producto está resolviendo sus problemas**
-1. Es una gran ayuda, ya que si algunas mujeres tienen la oportunidad de advertir a otras de alguna situación hóstil, se podrían evitar algunas situaciones traumaticas a las demás
-2. Muchas mujeres se sentirían más segura al estar en un entorno desconicdo si obtienen información previa de este
+1. Es una gran ayuda, ya que podremos entregarnos información secretra entre nosotras y no cualquiera la podrá entender

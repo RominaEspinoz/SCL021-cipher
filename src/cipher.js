@@ -1,7 +1,7 @@
 const cipher = { 
   encode: function (desplazamiento, texto){
-    if (!Number.isInteger(desplazamiento) || desplazamiento === 0 || desplazamiento === null ) {
-      throw new TypeError("Debes ingresar un numero");
+    if (!Number.isInteger(desplazamiento) || texto==="" || desplazamiento==="null" || texto.length===0 || desplazamiento===0) {
+      throw new TypeError("Wrong arguments type");
     }
     let resultado = "";
     let letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -22,8 +22,8 @@ const cipher = {
   },
 
   decode: function (desplazamiento,texto){
-    if (!Number.isInteger(desplazamiento) || desplazamiento === 0 || desplazamiento === null ) {
-      throw new TypeError("Debes ingresar un numero");
+    if (!Number.isInteger(desplazamiento) || texto==="" || desplazamiento==="null" || texto.length===0 || desplazamiento===0) {
+      throw new TypeError("Wrong arguments type");
     }
 
     let resultado = "";

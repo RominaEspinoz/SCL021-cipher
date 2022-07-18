@@ -1,6 +1,6 @@
 import cipher from './cipher.js';
 
-console.log(cipher);
+//console.log(cipher);
 
 window.addEventListener("load", ToCreate, true);
 window.addEventListener("load", ToDecode, true);
