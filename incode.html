@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="name">
+      <h1>Te Acompaño</h1>
+      <h2>Juntas nos cuidamos</h2>
+    </div>
+  </header>
+
+  <main>
+
+    <article id="incode2">
+      <form action="#" method="post" name="Mensage" class="Formulario">
+        <label for="messagetocode" id="InsertMessage">INSERTA TÚ MENSAJE AQUÍ:</label><br>
+        <input type="text" id="messagetocode" name="messagetocode" pattern="[A-Z]{1,1000}"
+          placeholder="Sólo mayúsculas, no se acepta la letra ñ">
+        <span class="validity"></span>
+      </form>
+      <form action="#" method="post" name="Mensage" class="Formulario">
+        <div class="part2">
+          <label for="movement" id="labelmovement">Indica un n° de desplazamiento para el cifrado</label>
+          <input type="number" id="movement" name="movement">
+          <input type="button" id="Tocreate" value="CREAR">
+        </div>
+      </form>
+
+    </article>
+    <div id="Logo2">
+      <img src="Logo (2).png" id="Imagenprincipal" alt="Logo de la página, manos tomadas">
+      <div id="Buttons">
+        <button class="Index"><a href="index.html" style="color: #522b4e">VOLVER</a></button>
+
+      </div>
+    </div>
+    <div id="container2">
+      <article id="result">
+        <div class="CodedMessage">
+          <p>ESTE ES TÚ MENSAJE SECRETO!</p>
+          <input type="text" name="textarea" id="textarea">
+        </div>
+      </article>
+      <article id="todecode2">
+        <form action="#" method="post" name="Mensage" class="Formulario">
+          <input type="button" id="Todecode" value="DESCIRFAR MENSAJE
+SECRETO">
+        </form>
+
+        <div class="DecodedMessage">
+          <p>ESTE ES EL MENSAJE DESCIFRADO!</p>
+          <input type="text" name="DecodedMessage" id="DecodedMessage">
+        </div>
+      </article>
+    </div>
+  </main>
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>
